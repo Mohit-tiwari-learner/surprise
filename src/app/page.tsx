@@ -1785,11 +1785,12 @@ export default function ProposalPage() {
                               <Check className="w-3.5 h-3.5 text-emerald-500" />
                             </>
                           ) : (
-                            <Copy 
-                              className="w-3.5 h-3.5 text-zinc-400 hover:text-pink-500 cursor-pointer transition-colors" 
-                              onClick={handleCopyProjectName} 
-                              title="Copy file name"
-                            />
+                            <span title="Copy file name">
+                              <Copy 
+                                className="w-3.5 h-3.5 text-zinc-400 hover:text-pink-500 cursor-pointer transition-colors" 
+                                onClick={handleCopyProjectName} 
+                              />
+                            </span>
                           )}
                         </div>
                       </div>
